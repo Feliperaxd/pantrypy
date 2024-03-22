@@ -1,8 +1,8 @@
 # PantryPy
-PantryPy is a Python library enhancing type hints and introducing new object annotations, simplifying code clarity and extensibility
+PantryPy is a Python library enhancing type hints and introducing new object annotations, simplifying code clarity and extensibility!
 
 ## Installation
-To install, use the command `pip install pantrypy` in your terminal.
+To install, use the command `pip install pantrypy` in your terminal!
 
 ## Structures
 Structures are objects created to represent that type, many of them can have special functionalities such as arithmetic operations or formatting when transformed into strings!
