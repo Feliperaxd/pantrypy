@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* -- Header Objects -- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 10vh;
+    background-color: red;
+}
+#menu-button{
+    width: 4vh;
+    height: 4.8vh;
+    border: none;
+
+    left: 4vw;
+    position: absolute;
+
+    background-size: cover;
+    background-image: url(icons/menu_icon.svg);
+    background-color: transparent
+}
+
+/* -- Nav Objects--*/
+#menu-nav{
+    top: 0;
+    left: -70vw;
+    position: absolute;
+
+    width: 70vw;
+    height: 100vh;
+    background-color: aqua;
+}
+#menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 10%;
+    background-color: green;
+}
+#back-menu-button{
+    width: 7vh;
+    height: 7vh;
+    border: none;
+
+    left: 4vw;
+    position: absolute;
+
+    background-size: cover;
+    background-image: url(icons/back_arrow_icon.svg);
+    background-color: transparent
+}
+
+/* -- IFrame --*/
+#main-iframe{
+    width: 100vw;
+    height: 90vh;
+}
+
+@keyframes openMenu {
+    from {left: -70vw}
+    to {left: 0}
+}
+
+@keyframes closeMenu {
+    from {left: 0}
+    to {left: -70vw;}
+}
