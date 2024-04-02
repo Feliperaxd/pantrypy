@@ -1,0 +1,22 @@
+@import url(color_pallete.css);
+
+/* -- Copy Button -- */
+.copy-text-button {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    color: transparent;
+    background-color: transparent;
+    
+    background-size: cover;
+    background-image: url(../img/copy_text_icon.svg);
+}
+
+.copy-text-button:hover {
+    scale: 1.2;
+    transition: 0.2s ease-in-out;
+}
+.copy-text-button.clicked {
+    scale: 1.50;
+}
+

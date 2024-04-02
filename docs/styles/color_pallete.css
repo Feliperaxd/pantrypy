@@ -1,0 +1,49 @@
+:root {
+  /* -- Links Colors -- */
+  --link-color: #0b9990;
+  --hover-link-color: blue;
+  --clicked-link-color: green;
+  --visited-link-color: red;
+
+  /* -- Basic Colors -- */
+  --gray-color: #5D5F5D;
+  --white-color: #f7f7f8;
+  --black-color: #0d0d0d;
+  --primary-color: #08b07e;
+  --secondary-color: #088c9d;
+  --primary-background-color: #212123;
+  --secondary-background-color: #333232;
+
+  /*  -- In Code Colors --  */
+  --in-code-class-color: #1cbb2e;
+  --in-code-string-color: #bf7b4f;
+  --in-code-number-color: #adc07e;
+  --in-code-comment-color: #618b45;
+  --in-code-variable-color: #5eb9e7;
+  --in-code-function-color: #dbd9a4;
+}
+
+/* -- Colors In Class*/
+.code-theme-class {
+  color: var(--in-code-class-color);
+}
+
+.code-theme-string {
+  color: var(--in-code-string-color);
+}
+
+.code-theme-number {
+  color: var(--in-code-number-color);
+}
+
+.code-theme-comment {
+  color: var(--in-code-comment-color);
+}
+
+.code-theme-variable {
+  color: var(--in-code-variable-color);
+}
+
+.code-theme-function {
+  color: var(--in-code-function-color);
+}

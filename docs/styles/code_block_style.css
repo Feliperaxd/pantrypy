@@ -1,0 +1,43 @@
+@import url(color_pallete.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.code-block {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.code-block-header > p {
+  margin-bottom: 10px;
+}
+
+.code-block-body {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 8px;
+  background-color: var(--black-color);
+}
+
+.code-block-body > code {
+  color: var(--white-color);
+  padding: 15px;
+  font-size: 14px;
+}
+
+.code-block-body > .copy-text-button {
+  width: 22px;
+  height: 22px;
+  border: none;
+
+  top: 12px;
+  right: 15px;
+  position: absolute;
+}

@@ -1,0 +1,11 @@
+@import url(color_pallete.css);
+
+ul {
+    color: var(--white-color);
+    margin-left: 20px;
+    font-family: Arial;
+}
+
+li {
+    margin-top: 20px;
+}

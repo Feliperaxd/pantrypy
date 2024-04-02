@@ -1,0 +1,31 @@
+@import url(color_pallete.css);
+@import url(text_block_style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+body {
+    background-color: var(--primary-background-color);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--secondary-background-color);
+}

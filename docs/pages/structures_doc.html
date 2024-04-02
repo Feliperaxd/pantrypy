@@ -1,0 +1,173 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/doc_page_style.css">
+    <link rel="stylesheet" href="../styles/code_block_style.css">
+    <link rel="stylesheet" href="../styles/table_style.css">
+    <link rel="stylesheet" href="../styles/list_style.css">
+    <link rel="stylesheet" href="../styles/global_styles.css">
+    <link rel="stylesheet" href="../styles/button_style.css">
+</head>
+
+<body>
+    <section id="section-introduction">
+        <div class="text-block">
+            <h2>Structures</h2>
+            <p>
+                Structures are objects created to represent that type!
+                Many of them can have special functionalities such as
+                arithmetic operations or formatting when transformed into strings!
+            </p>
+            <hr>
+        </div>
+        <div class="text-block">
+            <h3>Color Structures</h3>
+            <p>
+                Objects used to represent colors,
+                each parameter represents its respective channel!
+            </p>
+            <ul>
+                <li>
+                    <span class="code-theme-class">CMYKColor</span>:<br>
+                    Used to represent colors in the CMYK model
+                    (Cyan, Magenta, Yellow, Black).
+                </li>
+                <li>
+                    <span class="code-theme-class">HexColor</span>:<br>
+                    Used to represent colors in hexadecimal format.
+                </li>
+                <li>
+                    <span class="code-theme-class">HexAColor</span>:<br>
+                    Used to represent colors in hexadecimal format with alpha channel.
+                </li>
+                <li>
+                    <span class="code-theme-class">HSBColor</span>:<br>
+                    Used to represent colors in the HSB model (Hue, Saturation, Brightness).
+                </li>
+                <li>
+                    <span class="code-theme-class">RGBColor</span>:<br>
+                    Used to represent colors in the RGB model (Red, Green, Blue).
+                </li>
+                <li>
+                    <span class="code-theme-class">RGBAColor</span>:<br>
+                    Used to represent colors in the RGB model with alpha channel
+                    (Red, Green, Blue, Alpha).
+                </li>
+                <li>
+                    <span class="code-theme-class">RYBColor</span>:<br>
+                    Used to represent colors in the RYB model (Red, Yellow, Blue).
+                </li>
+            </ul>
+            <div class="code-block">
+                <pre class="code-block-body">
+                    <code>
+ <span class="code-theme-comment"># -- Usage! --</span>
+
+ <span class="code-theme-variable">cmyk_clr</span> = <span class="code-theme-class">CMYKColor</span>(<span class="code-theme-number">99</span>, <span class="code-theme-number">0</span class="code-theme-number">, <span class="code-theme-number">43</span>, <span class="code-theme-number">1</span>)
+ <span class="code-theme-variable">hex_clr</span> = <span class="code-theme-class">HexColor</span>(<span class="code-theme-string">'#03FC90'</span>)
+ <span class="code-theme-variable">hexa_clr</span> = <span class="code-theme-class">HexAColor</span>(<span class="code-theme-string">'#03FC90FF'</span>)
+ <span class="code-theme-variable">hsb_clr</span> = <span class="code-theme-class">HSBColor</span>(<span class="code-theme-number">154</span>, <span class="code-theme-number">99</span>, <span class="code-theme-number">99</span>)
+ <span class="code-theme-variable">rgb_clr</span> = <span class="code-theme-class">RGBColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>)
+ <span class="code-theme-variable">rgba_clr</span> = <span class="code-theme-class">RGBAColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>, <span class="code-theme-number">255</span>)
+ <span class="code-theme-variable">ryb_clr</span> = <span class="code-theme-class">RYBColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>)
+                    </code>
+                    <button 
+onclick="
+var text = `# -- Usage! --
+
+cmyk_clr = CMYKColor(99, 0, 43, 1)
+hex_clr = HexColor('#03FC90')
+hexa_clr = HexAColor('#03FC90FF')
+hsb_clr = HSBColor(154, 99, 99)
+rgb_clr = RGBColor(3, 252, 144)
+rgba_clr = RGBAColor(3, 252, 144, 255)
+ryb_clr = RYBColor(3, 252, 144)`
+copyText(text)
+changeColor(this)"
+                            class="copy-text-button">
+                    </button>
+                </pre>
+            </div>
+            <div class="code-block">
+                <pre class="code-block-body">
+                    <code>
+ <span class="code-theme-comment"># -- Usage! --</span>
+
+ <span class="code-theme-variable">cmyk_clr</span> = <span class="code-theme-class">CMYKColor</span>(<span class="code-theme-number">99</span>, <span class="code-theme-number">0</span class="code-theme-number">, <span class="code-theme-number">43</span>, <span class="code-theme-number">1</span>)
+ <span class="code-theme-variable">hex_clr</span> = <span class="code-theme-class">HexColor</span>(<span class="code-theme-string">'#03FC90'</span>)
+ <span class="code-theme-variable">hexa_clr</span> = <span class="code-theme-class">HexAColor</span>(<span class="code-theme-string">'#03FC90FF'</span>)
+ <span class="code-theme-variable">hsb_clr</span> = <span class="code-theme-class">HSBColor</span>(<span class="code-theme-number">154</span>, <span class="code-theme-number">99</span>, <span class="code-theme-number">99</span>)
+ <span class="code-theme-variable">rgb_clr</span> = <span class="code-theme-class">RGBColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>)
+ <span class="code-theme-variable">rgba_clr</span> = <span class="code-theme-class">RGBAColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>, <span class="code-theme-number">255</span>)
+ <span class="code-theme-variable">ryb_clr</span> = <span class="code-theme-class">RYBColor</span>(<span class="code-theme-number">3</span>, <span class="code-theme-number">252</span>, <span class="code-theme-number">144</span>)
+                    </code>
+                    <button 
+onclick="
+var text = `# -- Usage! --
+
+cmyk_clr = CMYKColor(99, 0, 43, 1)
+hex_clr = HexColor('#03FC90')
+hexa_clr = HexAColor('#03FC90FF')
+hsb_clr = HSBColor(154, 99, 99)
+rgb_clr = RGBColor(3, 252, 144)
+rgba_clr = RGBAColor(3, 252, 144, 255)
+ryb_clr = RYBColor(3, 252, 144)`
+copyText(text)
+changeColor(this)"
+                            class="copy-text-button">
+                    </button>
+                </pre>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Channel Range Values</th>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>0 to 100 - 0 to 100 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>Hex</td>
+                            <td>00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HexA</td>
+                            <td>00 to FF - 00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HSB</td>
+                            <td>0 to 360 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RGBA</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RYB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <script src="../scripts/copy_button_engine.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@import url(color_pallete.css);
+
+.link-to-out {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link-to-out:hover {
+    color: var(--hover-link-color);
+}
+
+.link-to-out:active {
+    color: var(--clicked-link-color);
+}
+
+.link-to-out:visited {
+    color: var(--visited-link-color);
+}
+
+.link-to-out:visited:hover {
+    color: cyan;
+}
