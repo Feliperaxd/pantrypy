@@ -4,402 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/code_block_style.css">
-    <link rel="stylesheet" href="../styles/table_style.css">
-    <link rel="stylesheet" href="../styles/list_style.css">
+    <link rel="stylesheet" href="../styles/container.css">
+    <link rel="stylesheet" href="../styles/text_block.css">
     <link rel="stylesheet" href="../styles/global_styles.css">
+    <link rel="stylesheet" href="../styles/dividing_line.css">
+    <link rel="stylesheet" href="../styles/table_style.css">
+    <link rel="stylesheet" href="../styles/code_block_style.css">
     <link rel="stylesheet" href="../styles/button_style.css">
 </head>
 
 <body>
-    <section id="section-structures">
+    <section class="container" id="section-structures">
         <div class="text-block">
-            <h2>Structures</h2>
+            <h1>Structures</h1>
             <p>
                 Structures are objects created to represent that type!
                 Many of them can have special functionalities such as
                 arithmetic operations or formatting when transformed into strings!
             </p>
-            <hr>
         </div>
+        <hr class="dividing-line">
     </section>
-    <section id="section-color-structures">
+    <section class="container">
         <div class="text-block">
-            <h3>Color Structures</h3>
+            <h2>Color Structures</h2>
             <p>
                 Objects used to represent colors,
                 each parameter represents its respective channel!
             </p>
-            <ul>
-                <li>
-                    <span class="code-theme-class">CMYKColor</span>:<br>
-                    Used to represent colors in the CMYK model
-                    (Cyan, Magenta, Yellow, Black).
-                </li>
-                <li>
-                    <span class="code-theme-class">HexColor</span>:<br>
-                    Used to represent colors in hexadecimal format.
-                </li>
-                <li>
-                    <span class="code-theme-class">HexAColor</span>:<br>
-                    Used to represent colors in hexadecimal format with alpha channel.
-                </li>
-                <li>
-                    <span class="code-theme-class">HSBColor</span>:<br>
-                    Used to represent colors in the HSB model (Hue, Saturation, Brightness).
-                </li>
-                <li>
-                    <span class="code-theme-class">RGBColor</span>:<br>
-                    Used to represent colors in the RGB model (Red, Green, Blue).
-                </li>
-                <li>
-                    <span class="code-theme-class">RGBAColor</span>:<br>
-                    Used to represent colors in the RGB model with alpha channel
-                    (Red, Green, Blue, Alpha).
-                </li>
-                <li>
-                    <span class="code-theme-class">RYBColor</span>:<br>
-                    Used to represent colors in the RYB model (Red, Yellow, Blue).
-                </li>
-            </ul>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; CMYKColor</h3>
+            <p>
+                Used to represent colors in the CMYK model
+                (Cyan, Magenta, Yellow, Black).
+            </p>
             <div class="code-block">
                 <pre class="code-block-body">
-                    <code>
- <span class="code-theme-comment"># -- Usage! --</span>
-
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
  <span class="code-theme-variable">cmyk_clr</span> = <span class="code-theme-class">CMYKColor</span>(
-    <span class="code-theme-variable">c_channel</span>=<span class="code-theme-number">99</span>,
+    <span class="code-theme-variable">c_channel</span>=<span class="code-theme-number">0</span>,
     <span class="code-theme-variable">m_channel</span>=<span class="code-theme-number">0</span>,
-    <span class="code-theme-variable">y_channel</span>=<span class="code-theme-number">43</span>,
-    <span class="code-theme-variable">k_channel</span>=<span class="code-theme-number">1</span>
- )
-
- <span class="code-theme-variable">hex_clr</span> = <span class="code-theme-class">HexColor</span>(
-    <span class="code-theme-variable">value</span>=<span class="code-theme-string">'#03FC90'</span>
- )
-
- <span class="code-theme-variable">hexa_clr</span> = <span class="code-theme-class">HexAColor</span>(
-    <span class="code-theme-variable">value</span>=<span class="code-theme-string">'#03FC90FF'</span>
- )
-
- <span class="code-theme-variable">hsb_clr</span> = <span class="code-theme-class">HSBColor</span>(
-    <span class="code-theme-variable">hue</span>=<span class="code-theme-number">154</span>,
-    <span class="code-theme-variable">saturation</span>=<span class="code-theme-number">99</span>,
-    <span class="code-theme-variable">brightness</span>=<span class="code-theme-number">99</span>
- )
-
- <span class="code-theme-variable">rgb_clr</span> = <span class="code-theme-class">RGBColor</span>(
-    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-number">3</span>,
-    <span class="code-theme-variable">g_channel</span>=<span class="code-theme-number">252</span>,
-    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-number">144</span>
- )
-
- <span class="code-theme-variable">rgba_clr</span> = <span class="code-theme-class">RGBAColor</span>(
-    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-number">3</span>, 
-    <span class="code-theme-variable">g_channel</span>=<span class="code-theme-number">252</span>, 
-    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-number">144</span>,
-    <span class="code-theme-variable">a_channel</span>=<span class="code-theme-number">255</span>
- )
-
- <span class="code-theme-variable">ryb_clr</span> = <span class="code-theme-class">RYBColor</span>(
-    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-number">3</span>,
-    <span class="code-theme-variable">y_channel</span>=<span class="code-theme-number">252</span>,
-    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-number">144</span>
+    <span class="code-theme-variable">y_channel</span>=<span class="code-theme-number">0</span>,
+    <span class="code-theme-variable">k_channel</span>=<span class="code-theme-number">0</span>
  )
                     </code>
                     <button 
-onclick="
-var text = ` # -- Usage! --
-
-cmyk_clr = CMYKColor(
-   c_channel=99,
-   m_channel=0,
-   y_channel=43,
-   k_channel=1
-)
-
-hex_clr = HexColor(
-   value='#03FC90'
-)
-
-hexa_clr = HexAColor(
-   value='#03FC90FF'
-)
-
-hsb_clr = HSBColor(
-   hue=154,
-   saturation=99,
-   brightness=99
-)
-
-rgb_clr = RGBColor(
-   r_channel=3,
-   g_channel=252,
-   b_channel=144
-)
-
-rgba_clr = RGBAColor(
-   r_channel=3, 
-   g_channel=252, 
-   b_channel=144,
-   a_channel=255
-)
-
-ryb_clr = RYBColor(
-   r_channel=3,
-   y_channel=252,
-   b_channel=144
-)`
-copyText(text)
-clickCopyButton(this)"
-                            class="copy-button">
-                    </button>
-                </pre>
-            </div>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Channel Range Values</th>
-                        </tr>
-                        <tr>
-                            <th>Color</th>
-                            <th>Values</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>CMYK</td>
-                            <td>0 to 100 - 0 to 100 - 0 to 100 - 0 to 100</td>
-                        </tr>
-                        <tr>
-                            <td>Hex</td>
-                            <td>00 to FF - 00 to FF - 00 to FF</td>
-                        </tr>
-                        <tr>
-                            <td>HexA</td>
-                            <td>00 to FF - 00 to FF - 00 to FF - 00 to FF</td>
-                        </tr>
-                        <tr>
-                            <td>HSB</td>
-                            <td>0 to 360 - 0 to 100 - 0 to 100</td>
-                        </tr>
-                        <tr>
-                            <td>RGB</td>
-                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
-                        </tr>
-                        <tr>
-                            <td>RGBA</td>
-                            <td>0 to 255 - 0 to 255 - 0 to 255 - 0 to 255</td>
-                        </tr>
-                        <tr>
-                            <td>RYB</td>
-                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <hr>
-        </div>
-    </section>
-    <section id="section-geometry-structures">
-        <div class="text-block">
-            <h3>Geometry Structures</h3>
-            <p>
-                Objects used to represent and facilitate the understanding 
-                and calculations of sizes, coordinates, and zones!
-            </p>
-            <ul>
-                <li>
-                    <span class="code-theme-class">Coordinates2D</span>:<br>
-                    Used to represent two-dimensional coordinates 
-                    (x_coord, y_coord).
-                </li>
-                <li>
-                    <span class="code-theme-class">Coordinates3D</span>:<br>
-                    Used to represent three-dimensional coordinates  
-                    (x_coord, y_coord, z_coord).
-                </li>
-                <li>
-                    <span class="code-theme-class">Size2D</span>:<br>
-                    Used to represent two-dimensional size 
-                    (width, height).
-                </li>
-                <li>
-                    <span class="code-theme-class">Size3D</span>:<br>
-                    Used to represent three-dimensional size 
-                    (width, height, length).
-                </li>
-                <li>
-                    <span class="code-theme-class">Zone2D</span>:<br>
-                    Used to represent two-dimensional zone 
-                    (x_coord, y_coord, width, height).
-                </li>
-                <li>
-                    <span class="code-theme-class">Zone3D</span>:<br>
-                    Used to represent three-dimensional zone 
-                    (x_coord, y_coord, z_coord, width, height, length).
-                </li>
-            </ul>
-            <div class="code-block">
-                <pre class="code-block-body">
-                    <code>
- <span class="code-theme-comment"># -- Usage! --</span>
-
- <span class="code-theme-variable">coord_2d</span> = <span class="code-theme-class">Coordinates2D</span>(
-    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>
- )
-
- <span class="code-theme-variable">coord_3d</span> = <span class="code-theme-class">Coordinates3D</span>(
-    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
-    <span class="code-theme-variable">z_coord</span>=<span class="code-theme-number">30.5</span>
- )
- 
- <span class="code-theme-variable">size_2d</span> = <span class="code-theme-class">Size2D</span>(
-    <span class="code-theme-variable">width</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">height</span>=<span class="code-theme-number">20.22</span>
- )
-
- <span class="code-theme-variable">size_3d</span> = <span class="code-theme-class">Size3D</span>(
-    <span class="code-theme-variable">width</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">height</span>=<span class="code-theme-number">20.22</span>,
-    <span class="code-theme-variable">length</span>=<span class="code-theme-number">30.5</span>
- )
-
- <span class="code-theme-variable">zone_2d</span> = <span class="code-theme-class">Zone2D</span>(
-    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
-    <span class="code-theme-variable">width</span>=<span class="code-theme-number">30.5</span>,
-    <span class="code-theme-variable">height</span>=<span class="code-theme-number">40</span>
- )
-
- <span class="code-theme-variable">zone_3d</span> = <span class="code-theme-class">Zone3D</span>(
-    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
-    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
-    <span class="code-theme-variable">z_coord</span>=<span class="code-theme-number">30.5</span>,
-    <span class="code-theme-variable">width</span>=<span class="code-theme-number">40</span>,
-    <span class="code-theme-variable">height</span>=<span class="code-theme-number">40.44</span>,
-    <span class="code-theme-variable">length</span>=<span class="code-theme-number">60.5</span>
- )
-                    </code>
-                    <button 
-onclick="
-var text = `# -- Usage! --
-
-coord_2d = Coordinates2D(
-    x_coord=10,
-    y_coord=20.22
-)
-
-coord_3d = Coordinates3D(
-    x_coord=10,
-    y_coord=20.22,
-    z_coord=30.5
-)
-
-size_2d = Size2D(
-    width=10,
-    height=20.22
-)
-
-size_3d = Size3D(
-    width=10,
-    height=20.22,
-    length=30.5
-)
-
-zone_2d = Zone2D(
-    x_coord=10,
-    y_coord=20.22,
-    width=30.5,
-    height=40
-)
-
-zone_3d = Zone3D(
-    x_coord=10,
-    y_coord=20.22,
-    z_coord=30.5,
-    width=40,
-    height=40.44,
-    length=60.5
-)`
-copyText(text)
-clickCopyButton(this)"
-                            class="copy-button">
-                    </button>
-                </pre>
-            </div>
-            <hr>
-        </div>
-    </section>
-    <section id="section-geometry-structures">
-        <div class="text-block">
-            <h3>Explore More</h3>
-            <p>
-                All structures can inherit some characteristics, 
-                gaining special abilities such as arithmetic operations, 
-                comparison, and many others!
-            </p>
-            <h4>How does each ability work?</h4>
-            <p>
-                Each ability inherited by a structure works slightly differently,
-                but they all help to facilitate understanding!
-            </p>
-            <ul>
-                <li>
-                    <span class="code-theme-class">Arithmetic</span>:<br>
-                    In arithmetic abilities, 
-                    you can easily perform calculations using 
-                    the structure + operator + value!
-                    <div class="code-block">
-                        <div class="code-block-header">
-                            <p>
-                                Example:
-                            </p>
-                        </div>
-                        <pre class="code-block-body">
-                            <code>
- <span class="code-theme-variable">size</span> = <span class="code-theme-class">Size2D</span>(<span class="code-theme-number">10</span>, <span class="code-theme-number">20.3</span>)
- <span class="code-theme-variable">size</span> = <span class="code-theme-variable">size</span> / <span class="code-theme-number">2</span>
- <span class="code-theme-function">print</span>(<span class="code-theme-variable">size</span>.<span class="code-theme-variable">width</span>, <span class="code-theme-variable">size</span>.<span class="code-theme-variable">height</span>)
-
- <span class="code-theme-comment">#>>> 5, 10.15</span>
-                            </code>
-                            <button 
 onclick="
 var text = `
-size = Size2D(10, 20.3)
-size = size / 2
-print(size.width, size.height)
-
-#>>> 5, 10.15`
+# -- Example --
+cmyk_clr = CMYKColor(
+    c_channel=0,
+    m_channel=0,
+    y_channel=0,
+    k_channel=0
+)`
 copyText(text)
 clickCopyButton(this)"
-                                    class="copy-button">
-                            </button>
-                        </pre>
-                    </div>
-                </li>
-                <li>
-                    <span class="code-theme-class">Comparative</span>:<br>
-                    Used to represent colors in hexadecimal format.
-                </li>
-                <li>
-                    <span class="code-theme-class">Formatting</span>:<br>
-                    Used to represent colors in hexadecimal format with alpha channel.
-                </li>
-                <li>
-                    <span class="code-theme-class">Indexing</span>:<br>
-                    Used to represent colors in the HSB model (Hue, Saturation, Brightness).
-                </li>
-                <li>
-                    <span class="code-theme-class">Iteration</span>:<br>
-                    Used to represent colors in the RGB model (Red, Green, Blue).
-                </li>
-            </ul>
+                            class="copy-button">
+                    </button>
+                </pre>
+            </div>
         </div>
+
+        <div class="text-block">
+            <h3>&#8226; HexColor</h3>
+            <p>
+                Used to represent colors in hexadecimal format.
+            </p>
+            <div class="code-block">
+                <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">hex_clr</span> = <span class="code-theme-class">HexColor</span>(
+    <span class="code-theme-variable">value</span>=<span class="code-theme-string">#000000</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+hex_clr = HexColor(
+    value=#000000
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; HexAColor</h3>
+            <p>
+                Used to represent colors in hexadecimal format with alpha channel.
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; HSBColor</h3>
+            <p>
+                Used to represent colors in the HSB model (Hue, Saturation, Brightness).
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; RGBColor</h3>
+            <p>
+                Used to represent colors in the RGB model (Red, Green, Blue).
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; RGBAColor</h3>
+            <p>
+                Used to represent colors in the RGB model with alpha channel
+                (Red, Green, Blue, Alpha).
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h3>&#8226; RYBColor</h3>
+            <p>
+                Used to represent colors in the RYB model (Red, Yellow, Blue).
+            </p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Channel Range Values</th>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <th>Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMYK</td>
+                        <td>0 to 100 - 0 to 100 - 0 to 100 - 0 to 100</td>
+                    </tr>
+                    <tr>
+                        <td>Hex</td>
+                        <td>00 to FF - 00 to FF - 00 to FF</td>
+                    </tr>
+                    <tr>
+                        <td>HexA</td>
+                        <td>00 to FF - 00 to FF - 00 to FF - 00 to FF</td>
+                    </tr>
+                    <tr>
+                        <td>HSB</td>
+                        <td>0 to 360 - 0 to 100 - 0 to 100</td>
+                    </tr>
+                    <tr>
+                        <td>RGB</td>
+                        <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                    </tr>
+                    <tr>
+                        <td>RGBA</td>
+                        <td>0 to 255 - 0 to 255 - 0 to 255 - 0 to 255</td>
+                    </tr>
+                    <tr>
+                        <td>RYB</td>
+                        <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr class="dividing-line">
     </section>
     <script src="../scripts/copy_button_engine.js"></script>
 </body>

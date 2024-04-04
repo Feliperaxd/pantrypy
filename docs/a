@@ -1,0 +1,275 @@
+<!--<li>
+                    <h4><span class="code-theme-class">HexColor</span>:</h4><br>
+                    <p>
+                        Used to represent colors in hexadecimal format.
+                    </p>
+                </li>
+                <li>
+                    <h4><span class="code-theme-class">HexAColor</span>:</h4><br>
+                    Used to represent colors in hexadecimal format with alpha channel.
+                </li>
+                <li>
+                    <h4><span class="code-theme-class">HSBColor</span>:</h4><br>
+                    Used to represent colors in the HSB model (Hue, Saturation, Brightness).
+                </li>
+                <li>
+                    <h4><span class="code-theme-class">RGBColor</span>:</h4><br>
+                    Used to represent colors in the RGB model (Red, Green, Blue).
+                </li>
+                <li>
+                    <h4><span class="code-theme-class">RGBAColor</span>:</h4><br>
+                    Used to represent colors in the RGB model with alpha channel
+                    (Red, Green, Blue, Alpha).
+                </li>
+                <li>
+                    <h4><span class="code-theme-class">RYBColor</span>:</h4><br>
+                    Used to represent colors in the RYB model (Red, Yellow, Blue).
+                </li>-->
+            </ul>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Channel Range Values</th>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>0 to 100 - 0 to 100 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>Hex</td>
+                            <td>00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HexA</td>
+                            <td>00 to FF - 00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HSB</td>
+                            <td>0 to 360 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RGBA</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RYB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!--<section id="section-geometry-structures">
+        <div class="text-block">
+            <h3>Geometry Structures</h3>
+            <p>
+                Objects used to represent and facilitate the understanding 
+                and calculations of sizes, coordinates, and zones!
+            </p>
+            <ul>
+                <li>
+                    <span class="code-theme-class">Coordinates2D</span>:<br>
+                    Used to represent two-dimensional coordinates 
+                    (x_coord, y_coord).
+                </li>
+                <li>
+                    <span class="code-theme-class">Coordinates3D</span>:<br>
+                    Used to represent three-dimensional coordinates  
+                    (x_coord, y_coord, z_coord).
+                </li>
+                <li>
+                    <span class="code-theme-class">Size2D</span>:<br>
+                    Used to represent two-dimensional size 
+                    (width, height).
+                </li>
+                <li>
+                    <span class="code-theme-class">Size3D</span>:<br>
+                    Used to represent three-dimensional size 
+                    (width, height, length).
+                </li>
+                <li>
+                    <span class="code-theme-class">Zone2D</span>:<br>
+                    Used to represent two-dimensional zone 
+                    (x_coord, y_coord, width, height).
+                </li>
+                <li>
+                    <span class="code-theme-class">Zone3D</span>:<br>
+                    Used to represent three-dimensional zone 
+                    (x_coord, y_coord, z_coord, width, height, length).
+                </li>
+            </ul>
+            <div class="code-block">
+                <pre class="code-block-body">
+                    <code>
+ <span class="code-theme-comment"># -- Usage! --</span>
+
+ <span class="code-theme-variable">coord_2d</span> = <span class="code-theme-class">Coordinates2D</span>(
+    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>
+ )
+
+ <span class="code-theme-variable">coord_3d</span> = <span class="code-theme-class">Coordinates3D</span>(
+    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
+    <span class="code-theme-variable">z_coord</span>=<span class="code-theme-number">30.5</span>
+ )
+ 
+ <span class="code-theme-variable">size_2d</span> = <span class="code-theme-class">Size2D</span>(
+    <span class="code-theme-variable">width</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">height</span>=<span class="code-theme-number">20.22</span>
+ )
+
+ <span class="code-theme-variable">size_3d</span> = <span class="code-theme-class">Size3D</span>(
+    <span class="code-theme-variable">width</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">height</span>=<span class="code-theme-number">20.22</span>,
+    <span class="code-theme-variable">length</span>=<span class="code-theme-number">30.5</span>
+ )
+
+ <span class="code-theme-variable">zone_2d</span> = <span class="code-theme-class">Zone2D</span>(
+    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
+    <span class="code-theme-variable">width</span>=<span class="code-theme-number">30.5</span>,
+    <span class="code-theme-variable">height</span>=<span class="code-theme-number">40</span>
+ )
+
+ <span class="code-theme-variable">zone_3d</span> = <span class="code-theme-class">Zone3D</span>(
+    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">10</span>,
+    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">20.22</span>,
+    <span class="code-theme-variable">z_coord</span>=<span class="code-theme-number">30.5</span>,
+    <span class="code-theme-variable">width</span>=<span class="code-theme-number">40</span>,
+    <span class="code-theme-variable">height</span>=<span class="code-theme-number">40.44</span>,
+    <span class="code-theme-variable">length</span>=<span class="code-theme-number">60.5</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `# -- Usage! --
+
+coord_2d = Coordinates2D(
+    x_coord=10,
+    y_coord=20.22
+)
+
+coord_3d = Coordinates3D(
+    x_coord=10,
+    y_coord=20.22,
+    z_coord=30.5
+)
+
+size_2d = Size2D(
+    width=10,
+    height=20.22
+)
+
+size_3d = Size3D(
+    width=10,
+    height=20.22,
+    length=30.5
+)
+
+zone_2d = Zone2D(
+    x_coord=10,
+    y_coord=20.22,
+    width=30.5,
+    height=40
+)
+
+zone_3d = Zone3D(
+    x_coord=10,
+    y_coord=20.22,
+    z_coord=30.5,
+    width=40,
+    height=40.44,
+    length=60.5
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section id="section-geometry-structures">
+        <div class="text-block">
+            <h3>Explore More</h3>
+            <p>
+                All structures can inherit some characteristics, 
+                gaining special abilities such as arithmetic operations, 
+                comparison, and many others!
+            </p>
+            <h4>How does each ability work?</h4>
+            <p>
+                Each ability inherited by a structure works slightly differently,
+                but they all help to facilitate understanding!
+            </p>
+            <ul>
+                <li>
+                    <span class="code-theme-class">Arithmetic</span>:<br>
+                    In arithmetic abilities, 
+                    you can easily perform calculations using 
+                    the structure + operator + value!
+                    <div class="code-block">
+                        <div class="code-block-header">
+                            <p>
+                                Example:
+                            </p>
+                        </div>
+                        <pre class="code-block-body">
+                            <code>
+ <span class="code-theme-variable">size</span> = <span class="code-theme-class">Size2D</span>(<span class="code-theme-number">10</span>, <span class="code-theme-number">20.3</span>)
+ <span class="code-theme-variable">size</span> = <span class="code-theme-variable">size</span> / <span class="code-theme-number">2</span>
+ <span class="code-theme-function">print</span>(<span class="code-theme-variable">size</span>.<span class="code-theme-variable">width</span>, <span class="code-theme-variable">size</span>.<span class="code-theme-variable">height</span>)
+
+ <span class="code-theme-comment">#>>> 5, 10.15</span>
+                            </code>
+                            <button 
+onclick="
+var text = `
+size = Size2D(10, 20.3)
+size = size / 2
+print(size.width, size.height)
+
+#>>> 5, 10.15`
+copyText(text)
+clickCopyButton(this)"
+                                    class="copy-button">
+                            </button>
+                        </pre>
+                    </div>
+                </li>
+                <li>
+                    <span class="code-theme-class">Comparative</span>:<br>
+                    Used to represent colors in hexadecimal format.
+                </li>
+                <li>
+                    <span class="code-theme-class">Formatting</span>:<br>
+                    Used to represent colors in hexadecimal format with alpha channel.
+                </li>
+                <li>
+                    <span class="code-theme-class">Indexing</span>:<br>
+                    Used to represent colors in the HSB model (Hue, Saturation, Brightness).
+                </li>
+                <li>
+                    <span class="code-theme-class">Iteration</span>:<br>
+                    Used to represent colors in the RGB model (Red, Green, Blue).
+                </li>
+            </ul>
+        </div>
+    </section>-->
+

@@ -1,0 +1,13 @@
+@import url(color_pallete.css);
+
+
+.container {
+    width: 90%;
+    margin: 30px 5%;
+    position: relative;
+    
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
