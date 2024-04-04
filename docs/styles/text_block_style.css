@@ -2,6 +2,7 @@
 
 .text-block > h2, 
 .text-block > h3,
+.text-block > h4,
 p {
   color: var(--white-color);
   text-align: start;
@@ -17,6 +18,11 @@ p {
 .text-block > h3 {
   font-size: 20px;
   margin-top: 0px;
+}
+
+.text-block > h4 {
+  font-size: 18px;
+  margin-top: 25px;
 }
 
 .text-block > p {

@@ -1,10 +1,4 @@
 :root {
-  /* -- Links Colors -- */
-  --link-color: #0b9990;
-  --hover-link-color: blue;
-  --clicked-link-color: green;
-  --visited-link-color: red;
-
   /* -- Basic Colors -- */
   --gray-color: #5D5F5D;
   --white-color: #f7f7f8;

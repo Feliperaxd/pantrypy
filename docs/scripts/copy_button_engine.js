@@ -2,12 +2,11 @@ function copyText(text) {
     navigator.clipboard.writeText(text)
 }
 
-function changeColor(clickedButton) {
-    var buttons = document.getElementsByClassName('copy-text-button');
-
+function clickCopyButton(clickedButton) {
+    var buttons = document.getElementsByClassName('copy-button');
     for (var i = 0; i < buttons.length; i++) {
-        buttons[i].style.backgroundColor = '';
+        buttons[i].style.animation = 'uncheckCopy 0.5s ease forwards';
+        buttons[i].style.animation = 'none';
     }
-
-    clickedButton.style.backgroundColor = 'red';
+    clickedButton.style.animation = 'checkCopy 0.5s ease forwards';
 }

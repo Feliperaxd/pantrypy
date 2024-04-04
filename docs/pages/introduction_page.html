@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/doc_page_style.css">
+    <link rel="stylesheet" href="../styles/code_block_style.css">
+    <link rel="stylesheet" href="../styles/text_block_style.css">
+    <link rel="stylesheet" href="../styles/button_style.css">
+    <link rel="stylesheet" href="../styles/global_styles.css">
+    <link rel="stylesheet" href="../styles/button_style.css">
 </head>
 
 <body>
@@ -19,7 +23,7 @@
                 please visit our
                 <a class="link-to-out" href="https://github.com/Feliperaxd/pantrypy" target="_blank">
                     GitHub repository
-                </a>.
+                </a>!
             </p>
             <div class="code-block">
                 <div class="code-block-header">
@@ -29,7 +33,7 @@
                 </div>
                 <div class="code-block-body">
                     <code>pip install pantrypy</code>
-                    <button onclick="copyText('pip install pantrypy')" class="copy-text-button">
+                    <button onclick="copyText('pip install pantrypy'); clickCopyButton(this)" class="copy-button">
                     </button>
                 </div>
             </div>
@@ -42,7 +46,7 @@
             Documentation under construction, we don't have patch notes yet.
         </p>
     </div>
-    <script src="../scripts/code_block_engine.js"></script>
+    <script src="../scripts/copy_button_engine.js"></script>
 </body>
 
 </html>
