@@ -6,14 +6,22 @@
     box-sizing: border-box;
 }
 
+main {
+    padding: 40px 0;
+}
+
 ::selection {
-    background-color: var(--secondary-color);
     color: var(--white-color);
+    background-color: var(--secondary-color);
 }
 
 body {
-    background-color: var(--primary-background-color);
     overflow-x: hidden;
+    background-color: var(--primary-background-color);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 body::-webkit-scrollbar {
@@ -21,8 +29,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
     border-radius: 5px;
+    background-color: var(--primary-color);
 }
 
 body::-webkit-scrollbar-track {

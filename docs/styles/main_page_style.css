@@ -4,24 +4,9 @@
     box-sizing: border-box
 }
 
-
-header > h1 {
-    font-family: Arial;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100vw;
-    height: 10vh;
-    background-color: var(--primary-color);
-}
-
 #menu-button {
-    width: 4vh;
-    height: 4.8vh;
+    width: 0;
+    height: 0;
     border: none;
 
     left: 4vw;
@@ -36,5 +21,26 @@ header {
 /* -- IFrame --*/
 #main-iframe {
     width: 100vw;
-    height: 90vh;
+
+    bottom: 0;
+    position: absolute;
+    animation: collapseIframe 0.1s ease-in-out forwards;
+}
+
+@keyframes collapseIframe {
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 94vh;
+    }
+}
+
+@keyframes expandIframe {
+    from {
+        height: 94vh;
+    }
+    to {
+        height: 100vh;
+    }
 }

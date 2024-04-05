@@ -1,0 +1,11 @@
+@import url(color_pallete.css);
+
+.radial-gradient-effect {
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(
+        circle, 
+        rgba(193,252,211,0.3) 0%, 
+        rgba(12,205,163,0.3) 37%, 
+        rgba(51,50,50,0.3) 95%
+    );
+}

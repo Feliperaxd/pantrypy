@@ -1,0 +1,37 @@
+@import url(color_pallete.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 6vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: expandHeader 0.1s ease-in-out forwards;
+    background-color: var(--primary-color);
+}
+
+@keyframes collapseHeader {
+    from {
+        height: 6vh;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes expandHeader {
+    from {
+        height: 0;
+    }
+    to {
+        height: 6vh;
+    }
+}

@@ -1,11 +1,38 @@
 @import url(color_pallete.css);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
 
 .container {
     width: 90%;
-    margin: 30px 5%;
     position: relative;
     
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container {
+    width: 100%;
+    position: relative;
+    
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-container {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+  
     display: flex;
     align-items: start;
     flex-direction: column;
