@@ -1,11 +1,29 @@
 @import url(color_pallete.css);
 
+.box-shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 .radial-gradient-effect {
-    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
     background: radial-gradient(
         circle, 
-        rgba(193,252,211,0.3) 0%, 
-        rgba(12,205,163,0.3) 37%, 
-        rgba(51,50,50,0.3) 95%
-    );
+        #c1fcd34d 0%, 
+        #0ccda34d 37%, 
+        #3332324d 95%
+    );  
+}
+
+.start-square-text-marker{
+    display: flex;
+}
+
+.start-square-text-marker::before {
+    width: 10px;
+    height: 1em;
+    margin-right: 10px;
+
+    content: '';
+    display: inline-block;
+    
+    background-color: var(--primary-color);
 }

@@ -16,31 +16,3 @@
     background-image: url(../img/menu_icon.svg);
     background-color: transparent
 }
-
-
-/* -- IFrame --*/
-#main-iframe {
-    width: 100vw;
-
-    bottom: 0;
-    position: absolute;
-    animation: collapseIframe 0.1s ease-in-out forwards;
-}
-
-@keyframes collapseIframe {
-    from {
-        height: 100vh;
-    }
-    to {
-        height: 94vh;
-    }
-}
-
-@keyframes expandIframe {
-    from {
-        height: 94vh;
-    }
-    to {
-        height: 100vh;
-    }
-}

@@ -8,19 +8,23 @@
 
 header {
     width: 100vw;
-    height: 6vh;
     
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     animation: expandHeader 0.1s ease-in-out forwards;
     background-color: var(--primary-color);
 }
 
 @keyframes collapseHeader {
     from {
-        height: 6vh;
+        height: 50px;
     }
     to {
         height: 0;
@@ -32,6 +36,6 @@ header {
         height: 0;
     }
     to {
-        height: 6vh;
+        height: 50px;
     }
 }

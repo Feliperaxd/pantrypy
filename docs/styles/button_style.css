@@ -10,7 +10,6 @@
 .copy-button {
     cursor: pointer;
     animation: uncheckCopy 0.5s ease forwards;
-    transition: 0.2s ease-in-out;
 
     color: transparent;
     background-color: transparent;
@@ -19,10 +18,6 @@
     background-image: url(../img/copy_icon.svg);
 }
 
-.copy-button:hover {
-    scale: 1.2;
-    transition: 0.2s ease-in-out;
-}
 
 @keyframes checkCopy {
     0% {
@@ -114,4 +109,58 @@
 @keyframes deselectLink {
     from {width: 98%;}
     to {width: 0;}
+}
+
+/* -- Return To Top Button -- */
+.scroll-to-top-button {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    
+    left: 20px;
+    z-index: 1;
+    position: fixed;
+    animation: hideScrollToTopButton 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transition: 0.3s ease;
+
+    background-size: cover;
+    background-image: url(../img/up_arrow.svg);
+    background-color: var(--primary-color);
+}
+.scroll-to-top-button:hover{
+    scale: 1.2;
+    transition: 0.3s ease;
+}
+
+
+@keyframes dropScrollToTopButton {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 20px;
+    }
+}
+
+@keyframes hideScrollToTopButton {
+    from {
+        top: 20px;
+    }
+    to {
+        top: -50px;
+    }
+}
+
+@keyframes slideUpScrollToTopButton {
+    0% {
+        top: 20px;
+    }
+    40% {
+        top: 60px;
+    }
+    100% {
+        top: -50px;
+    }
 }
