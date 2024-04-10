@@ -19,7 +19,6 @@ header {
     justify-content: center;
     
     animation: expandHeader 0.1s ease-in-out forwards;
-    background-color: var(--primary-color);
 }
 
 @keyframes collapseHeader {

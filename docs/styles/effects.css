@@ -13,6 +13,14 @@
     );  
 }
 
+.linear-gradient-effect {
+    background: linear-gradient(
+        42deg, 
+        #25837b 0%, 
+        #2cc798 100%
+    );
+}
+
 .start-square-text-marker{
     display: flex;
 }
