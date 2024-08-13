@@ -5,10 +5,13 @@
 # -----------------------------------------------------------------------------
 
 from typing import Any, NewType, Union  
+from pathlib import Path
 
 __all__ = [
     # Others
+    'AsPath',
     'AsNumeric',
+    'AsCollection',
 
     # Queries
     'SqlQuery',
@@ -74,8 +77,9 @@ __all__ = [
 ]
 
 # -- Others --
+AsPath = Union[Path, str]
 AsNumeric = Union[complex, float, int]
-Collection = Union[dict, list, set, tuple]
+AsCollection = Union[dict, list, set, tuple]
 
 # -- Queries -- 
 SqlQuery = NewType('SqlQuery', str)
