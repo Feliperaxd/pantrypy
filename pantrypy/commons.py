@@ -4,6 +4,7 @@
 # Licensed under the MIT License (see LICENSE file)
 # -----------------------------------------------------------------------------
 
+from pathlib import Path
 from typing import Any, NewType, Union  
 
 __all__ = [
