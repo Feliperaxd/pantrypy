@@ -293,4 +293,3 @@ class Zone3D(
             x_coord, y_coord, z_coord, 
             width, height, length
         )
-

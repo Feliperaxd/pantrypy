@@ -4,12 +4,13 @@
 # Licensed under the MIT License (see LICENSE file)
 # -----------------------------------------------------------------------------
 
+from typing import Any, NewType, Union
 from pathlib import Path
-from typing import Any, NewType, Union  
+
 
 __all__ = [
     # Others
-    'AsNumeric',
+    'FileType',
 
     # Codes
     'CSharpCode',
@@ -101,11 +102,31 @@ __all__ = [
 ]
 
 # -- Others --
-AsNumeric = Union[complex, float, int]
-Collection = Union[dict, list, set, tuple]
+FileType = NewType('FileType', str) 
 
-# -- Queries -- 
-SqlQuery = NewType('SqlQuery', str)
+# -- Codes --
+CSharpCode = NewType('CSharpCode', str)
+CSSCode = NewType('CSSCode', str)
+CPPCode = NewType('CPPCode', str)
+GoCode = NewType('GoCode', str)
+HTMLCode = NewType('HTMLCode', str)
+JavaCode = NewType('JavaCode', str)
+JavaScriptCode = NewType('JavaScriptCode', str)
+KotlinCode = NewType('KotlinCode', str)
+MATLABCode = NewType('MATLABCode', str)
+ObjectiveCCode = NewType('ObjectiveCCode', str)
+PerlCode = NewType('PerlCode', str)
+PHPCode = NewType('PHPCode', str)
+PythonCode = NewType('PythonCode', str)
+RCode = NewType('RCode', str)
+RubyCode = NewType('RubyCode', str)
+RustCode = NewType('RustCode', str)
+ScalaCode = NewType('ScalaCode', str)
+ShellScriptCode = NewType('ShellScriptCode', str)
+SQLQuery = NewType('SQLQuery', str)
+SwiftCode = NewType('SwiftCode', str)
+TypeScriptCode = NewType('TypeScriptCode', str)
+MarkdownCode = NewType('MarkdownCode' , str)
 
 # -- Colors --
 ColorName = NewType('ColorName', str)
