@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PantryPy',
-    version='1.0.1a5.1',
+    version='1.0.1a6',
     description='PantryPy is a Python library for enhanced typing with custom annotations',
     author='Felipe Amaral',
     author_email='lipeamaralsantos@gmail.com',

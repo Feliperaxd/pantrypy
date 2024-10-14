@@ -16,7 +16,7 @@ __all__ = [
 ]
 
 __name__ = 'PantryPy'
-__version__ = '1.0.1a5.1'
+__version__ = '1.0.1a6'
 __description__ = 'PantryPy is a Python library for enhanced typing with custom annotations'
 __author__ = 'Felipe Amaral'
 __author_email__ = 'lipeamaralsantos@gmail.com'
