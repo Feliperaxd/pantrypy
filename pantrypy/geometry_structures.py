@@ -4,7 +4,7 @@
 # Licensed under the MIT License (see LICENSE file)
 # -----------------------------------------------------------------------------
 
-from .common import AsNumeric
+from .commons import AsNumeric
 from .internals import (
     ArithmeticsResources, ComparisonsResources,
     FormattingResources, IndexableResources, IterableResources 
