@@ -308,6 +308,286 @@ clickCopyButton(this)"
                 </table>
             </div>
         </section>
+        <hr class="dividing-line">
+        <section class="container">
+            <div class="text-container">
+                <h2 class="start-square-text-marker">Geometry Structures</h2>
+                <p>
+                    Objects used to represent and facilitate 
+                    the understanding and calculations of sizes, coordinates, and zones!
+                </p>
+            </div>
+
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">Coordinates2D</h3>
+                    <p class="centered-text">
+                        Used to represent X and Y coordinates!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                        <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">coordinates2D</span> = <span class="code-theme-class">Coordinates2D</span>(
+    <span class="code-theme-variable">x_coord</span>=<span class="code-theme-number">0</span>,
+    <span class="code-theme-variable">y_coord</span>=<span class="code-theme-number">0</span>
+ )
+                        </code>
+                        <button 
+onclick="
+var text = `
+# -- Example --
+cmyk_clr = CMYKColor(
+    c_channel=0,
+    m_channel=0,
+    y_channel=0,
+    k_channel=0
+)`
+copyText(text)
+clickCopyButton(this)"
+                                class="copy-button">
+                        </button>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">Hex Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in hexadecimal format!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">hex_clr</span> = <span class="code-theme-class">HexColor</span>(
+    <span class="code-theme-variable">value</span>=<span class="code-theme-string">#000000</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+hex_clr = HexColor(
+    value=#000000
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">HexA Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in hexadecimal format with alpha channel!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">hexa_clr</span> = <span class="code-theme-class">HexAColor</span>(
+    <span class="code-theme-variable">value</span>=<span class="code-theme-string">#00000000</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+hexa_clr = HexAColor(
+    value=#00000000
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">HSB Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in the HSB model!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">hsb_clr</span> = <span class="code-theme-class">HSBColor</span>(
+    <span class="code-theme-variable">hue</span>=<span class="code-theme-string">360</span>,
+    <span class="code-theme-variable">saturation</span>=<span class="code-theme-string">100</span>,
+    <span class="code-theme-variable">brightness</span>=<span class="code-theme-string">100</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+hsb_clr = HSBColor(
+    hue=360,
+    saturation=100,
+    brightness=100
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">RGB Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in the RGB model!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">rgb_clr</span> = <span class="code-theme-class">RGBColor</span>(
+    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-string">255</span>,
+    <span class="code-theme-variable">g_channel</span>=<span class="code-theme-string">100</span>,
+    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-string">100</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+rgb_clr = RGBColor(
+    r_channel=255,
+    g_channel=100,
+    b_channel=100
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">RGBA Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in the RGB model with alpha channel!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">rgba_clr</span> = <span class="code-theme-class">RGBAColor</span>(
+    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-string">255</span>,
+    <span class="code-theme-variable">g_channel</span>=<span class="code-theme-string">100</span>,
+    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-string">100</span>,
+    <span class="code-theme-variable">a_channel</span>=<span class="code-theme-string">100</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+rgba_clr = RGBAColor(
+    r_channel=255,
+    g_channel=100,
+    b_channel=100,
+    a_channel=100
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container radial-gradient-effect box-shadow">
+                <div class="text-container">
+                    <h3 class="centered-text">RYB Color</h3>
+                    <p class="centered-text">
+                        Used to represent colors in the RYB model!
+                    </p>
+                    <div class="code-block">
+                        <pre class="code-block-body">
+                    <code> 
+ <span class="code-theme-comment"># -- Example --</span>
+ <span class="code-theme-variable">ryb_clr</span> = <span class="code-theme-class">RYBColor</span>(
+    <span class="code-theme-variable">r_channel</span>=<span class="code-theme-string">255</span>,
+    <span class="code-theme-variable">y_channel</span>=<span class="code-theme-string">100</span>,
+    <span class="code-theme-variable">b_channel</span>=<span class="code-theme-string">100</span>
+ )
+                    </code>
+                    <button 
+onclick="
+var text = `
+# -- Example --
+ryb_clr = RYBColor(
+    r_channel=255,
+    y_channel=100,
+    b_channel=100
+)`
+copyText(text)
+clickCopyButton(this)"
+                            class="copy-button">
+                    </button>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="table-box box-shadow">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Channel Range Values</th>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>0 to 100 - 0 to 100 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>Hex</td>
+                            <td>00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HexA</td>
+                            <td>00 to FF - 00 to FF - 00 to FF - 00 to FF</td>
+                        </tr>
+                        <tr>
+                            <td>HSB</td>
+                            <td>0 to 360 - 0 to 100 - 0 to 100</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RGBA</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                        <tr>
+                            <td>RYB</td>
+                            <td>0 to 255 - 0 to 255 - 0 to 255</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
         <script src="../scripts/buttons_engine.js"></script>
     </main>
 </body>

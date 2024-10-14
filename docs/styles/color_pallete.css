@@ -12,6 +12,7 @@
   --in-code-class-color: #1cbb2e;
   --in-code-string-color: #bf7b4f;
   --in-code-number-color: #adc07e;
+  --in-code-control-color: #ba86c0;
   --in-code-comment-color: #618b45;
   --in-code-variable-color: #5eb9e7;
   --in-code-function-color: #dbd9a4;
@@ -28,6 +29,10 @@
 
 .code-theme-number {
   color: var(--in-code-number-color);
+}
+
+.code-theme-controls {
+  color: var(--in-code-variable-color)
 }
 
 .code-theme-comment {
