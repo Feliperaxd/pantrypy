@@ -5,5 +5,6 @@
 # -----------------------------------------------------------------------------
 
 from .color_structures import *
-from .common import *
+from .commons import *
 from .geometry_structures import *
+from .metadata import *
